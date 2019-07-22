@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eurekaclient
+server:
+  port: 9911
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
