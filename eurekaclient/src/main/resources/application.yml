@@ -9,3 +9,7 @@ eureka:
       defaultZone: http://localhost:8888/eureka/
   instance:
     status-page-url: http://localhost:${server.port}/swagger-ui.html
+management:
+  endpoints:
+    web:
+      base-path: /actuator

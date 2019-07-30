@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
@@ -16,8 +17,9 @@ public class EurekaclientApplication {
     }
 
     @RequestMapping("/hi")
-    public String hell(){
-        return  "hello,eureka!";
+    public String hell(@RequestParam(value = "name", defaultValue = "forezp") String name){
+
+        return  "hello,eureka!"+name;
     }
 
 }
