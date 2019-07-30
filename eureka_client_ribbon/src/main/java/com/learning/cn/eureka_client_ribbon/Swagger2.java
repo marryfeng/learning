@@ -21,7 +21,7 @@ public class Swagger2 {
 				.apiInfo(apiInfo())
 				.select()
 				// 当前包路径
-				.apis(RequestHandlerSelectors.basePackage("com.learning.cn.eureka_client_ribbon.RibbonClientController"))
+				.apis(RequestHandlerSelectors.basePackage("com.learning.cn.eureka_client_ribbon.ribbonController"))
 				.paths(PathSelectors.any())
 				.build();
 	}
