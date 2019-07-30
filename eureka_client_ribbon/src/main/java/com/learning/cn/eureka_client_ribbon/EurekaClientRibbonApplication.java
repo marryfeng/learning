@@ -20,7 +20,5 @@ public class EurekaClientRibbonApplication {
     @LoadBalanced
     RestTemplate  restTemplate() {
         return new RestTemplate();
-
-
     }
 }
