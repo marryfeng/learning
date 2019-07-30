@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: servicefeign
+server:
+  port: 6677
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    status-page-url: http://localhost:${server.port}/swagger-ui.html
+management:
+  endpoints:
+    web:
+      base-path: /actuator
